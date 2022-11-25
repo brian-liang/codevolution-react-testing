@@ -6,3 +6,13 @@ test('Greet renders correctly', () =>{
     const textElement = screen.getByText(/hello/i)
     expect(textElement).toBeInTheDocument()
 })
+
+/*
+* Greet should render the text hello and if a name is passed into the component it should render hellow followed by the name
+*/
+
+test('Greet renders with a name', () =>{
+    render(<Greet name="Brian"/>)
+    const textElement = screen.getByText("Hello Brian")
+    expect(textElement).toBeInTheDocument()
+})
