@@ -1,5 +1,9 @@
-export const Greet = () => {
+interface GreetProps {
+    name?: string
+}
+
+export const Greet = ({name}: GreetProps) => {
     return(
-        <div>Hello</div>
+        <div>Hello {name}</div>
     )
 }
