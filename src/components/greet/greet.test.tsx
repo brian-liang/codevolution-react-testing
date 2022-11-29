@@ -16,3 +16,15 @@ test('Greet renders with a name', () =>{
     const textElement = screen.getByText("Hello Brian")
     expect(textElement).toBeInTheDocument()
 })
+
+// test.only('Only runs this test', () =>{
+//     render(<Greet name="Brian"/>)
+//     const textElement = screen.getByText("Hello Brian")
+//     expect(textElement).toBeInTheDocument()
+// })
+
+test.skip('Skipps test', () =>{
+    render(<Greet name="Brian"/>)
+    const textElement = screen.getByText("Hello Brian")
+    expect(textElement).toBeInTheDocument()
+})
