@@ -1,9 +1,10 @@
 interface GreetProps {
-    name?: string
+    firstName?: string,
+    lastName?: string
 }
 
-export const Greet = ({name}: GreetProps) => {
-    return(
-        <div>Hello {name}</div>
+export const Greet = ({firstName, lastName}: GreetProps) => {
+    return (
+        <div>Hello {firstName} {lastName}</div>
     )
 }
