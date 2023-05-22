@@ -1,7 +1,4 @@
-interface GreetProps {
-    firstName?: string,
-    lastName?: string
-}
+import {GreetProps} from "./greet.types";
 
 export const Greet = ({firstName, lastName}: GreetProps) => {
     return (
